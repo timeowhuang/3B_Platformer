@@ -59,12 +59,12 @@ class VictoryScreen extends Phaser.Scene {
         
         // 监听任意键重新开始游戏
         this.input.keyboard.on('keydown', () => {
-            this.scene.start('titleScene');
+            this.scene.start('platformerScene');
         });
         
         // 监听点击事件也可以重新开始
         this.input.on('pointerdown', () => {
-            this.scene.start('titleScene');
+            this.scene.start('platformerScene');
         });
     }
     
